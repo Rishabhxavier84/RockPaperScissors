@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+
+.playerO{
+    color: green;
+}
+
+.playerX{
+    color: red;
+}
+
+
+
+
+:root{
+    --bg: #fff;
+    --text: #000;
+    --box: #bebebe;
+    --button: #fff;
+}
+
+.theme1{
+    --bg: #181818;
+    --text: #fff;
+    --box: #fff;
+    --button: #fff;
+}
+
+
+
+section{
+    background-color: var(--bg);
+    color: var(--text);
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    padding: 3vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section h1{
+    margin: 2vh;
+}
+
+.theme{
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.theme button{
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.theme img{
+    height: 30px;
+    width: 30px;
+}
+
+#theme-switch img:last-child{
+    display: none;
+}
+
+#theme-switch img:first-child{
+    display: block;
+}
+
+.theme1 #theme-switch img:first-child{
+    display: none;
+}
+
+.theme1 #theme-switch img:last-child{
+    display: block;
+}
+
+.container{
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game{
+    width: 60vmin;
+    height: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 3vmin;
+}
+
+.box{
+    background-color: var(--box);
+    font-size: xx-large;
+    font-weight: 700;
+    width: 18vmin;
+    height: 18vmin;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    transition: all 80ms ease-in;
+}
+
+.box:hover{
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+}
+
+.button{
+    background-color: var(--button);
+    margin: 2rem;
+    padding: .5rem 2rem;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+}
+
+.button:hover{
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+}
+
+.win-msg{
+    text-transform: uppercase;
+}
+
+.hide{
+    display: none;
+}
